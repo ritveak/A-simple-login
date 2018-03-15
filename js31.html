@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUiz</title>
+	<style type="text/css">
+		h1
+	{
+		border:12px outset orange;
+		border-bottom-left-radius: 25px;
+		border-top-right-radius: 25px;
+		text-align: center;
+		text-shadow: 3px 2px #e55e60;
+		transition-property: border-color;
+    	transition-duration: 1.5s;
+    	transition-delay: 0.5s;
+    }
+    h1:hover {
+    border-color: green;
+	}
+	</style>
+</head>
+<body>
+	<h1>QUIZ</h1><br>
+	<h3>Answer these MCQ questions:</h3>
+	<form>
+	1. Who is the current president of India :<br>
+	<input type="radio" name="1" value="a">Pratibha Devi Singh Patel<br>
+	<input type="radio" name="1" value="b">APJ Abdul Kalam<br>
+	<input type="radio" name="1" value="c">Pranab Mukherjee<br>
+	<input type="radio" name="1" value="d">Ram Nath Kovind<br><br>
+	2. Who is the current Prime Minister of India :<br>
+	<input type="radio" name="2" value="a">Manmohan Singh<br>
+	<input type="radio" name="2" value="b">Amarendra Bahubali<br>
+	<input type="radio" name="2" value="c">Rahul Gandhi<br>
+	<input type="radio" name="2" value="d">Narendra Modi<br><br>
+	3. Which is not a part of Indian Defences?<br>
+	<input type="radio" name="3" value="a">Airforce<br>
+	<input type="radio" name="3" value="b">Navy<br>
+	<input type="radio" name="3" value="c">Space Assualt<br>
+	<input type="radio" name="3" value="d">Army<br><br>
+	4. Who was not a freedom Fighter?<br>
+	<input type="radio" name="4" value="a">Subhash Chandra Bose<br>
+	<input type="radio" name="4" value="b">Madam Bikhaji Cama <br>
+	<input type="radio" name="4" value="c">Ravi Shashtri<br>
+	<input type="radio" name="4" value="d">Mahatma Gandhi<br><br>
+	5. What is meant by Swaraj?<br>
+	<input type="radio" name="5" value="a">Male Dominance<br>
+	<input type="radio" name="5" value="b">Freedom from Britishers<br>
+	<input type="radio" name="5" value="c">Self-governance<br>
+	<input type="radio" name="5" value="d">Avoiding Foreign products<br><br>
+
+	<input type="button" value="Submit" onclick="f()">
+
+
+	</form>
+	<script type="text/javascript">
+		function f()
+		{
+			var marks = 0;
+			var w = document.getElementsByName("1");
+			if(w[3].checked)
+				marks++;
+			var x = document.getElementsByName("2");
+			if(x[3].checked)
+				marks++;
+			var y = document.getElementsByName("3");
+			if(y[2].checked)
+				marks++;
+			var z = document.getElementsByName("4");
+			if(x[2].checked)
+				marks++;
+			var za = document.getElementsByName("4");
+			if(za[2].checked)
+				marks++;
+			alert("You Scored :" + marks);
+
+		}
+	</script>
+</body>
+</html>

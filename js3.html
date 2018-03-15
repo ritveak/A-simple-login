@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QUIZ</title>
+
+<style type="text/css">
+	form
+	{
+		border:12px outset orange;
+		text-align: center;
+		margin-right: 300px;
+		margin-left: 300px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		border-bottom-left-radius: 25px;
+		border-top-right-radius: 25px;
+		transition-property: border-color;
+    	transition-duration: 1.5s;
+    	transition-delay: 0.5s;
+
+	}
+	h1
+	{
+		text-align: center;
+		text-shadow: 3px 2px #e55e60;
+		transition-property: color;
+    	transition-duration: 1.5s;
+    	transition-delay: 0.5s;
+}
+form:hover
+{
+	border-color: green;
+}
+
+h1:hover {
+    color: green;
+	}
+</style>
+</head>
+<body>
+<h1>QUIZ</h1><br><br><br>
+<form>
+	Username: <input type="text" id="usr"><br><br>
+	Password: <input type="Password" id = "pass"><br><br>
+	<input type="button" value="Login" onClick="display(this.form)">
+</form>
+<script type="text/javascript">
+function display(form)
+	{
+	if (form.usr.value=="ritveak")
+	 { 
+		if (form.pass.value=="password") 
+		{              
+			location="js31.html" 
+		} 
+		else 
+		{
+			alert("Invalid Password")
+		}
+	} 
+	else 
+		{  
+			alert("Invalid Username")
+		}
+}
+</script>
+</body>
+</html>
